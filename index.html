@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Cast</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top z-1" data-bs-theme="dark">
+    <div class="container p-3">
+      <div class="brand">
+        <a class="navbar-brand" href="#">
+        <img src="imgs/logo.png" alt="logo" class="me-1">
+        
+        <div class="align-middle d-inline-block">
+          Weather
+          <small class="text-white-50 d-block fs-6 mt-0">tagline goes here</small>
+        </div>
+      </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa fa-bars navbar-light navbar-toggler-icon" aria-hidden="true"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto me-md-0 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link border rounded-pill active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link border rounded-pill" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link border rounded-pill text-capitalize" href="#">live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link border rounded-pill text-capitalize" href="#">photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link border rounded-pill text-capitalize" href="#">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- BACKGROUNG IMAGE AND SEARCH -->
+  <div class="bg-img bg-dark">
+    <br>
+    <div class="container">
+      <div class="d-flex position-relative my-4 form-search">
+        <input class="form-control me-2 rounded-5 border-0" type="search" aria-label="Search" placeholder="Find your location..." id="search-input">
+        <button class="btn btn-primary position-absolute text-white rounded-5" type="submit" id="search-btn">Find</button>
+      </div>
+    </div>
+
+    <!-- FORECAST TABLE -->
+    <div class="container">
+      <div class="row py-3 text-white gx-0" >
+
+        <div class="col-md-4">
+          <div class="all rounded-5 same-bg">
+            <div class="d-flex justify-content-between p-2 same-bg-head">
+              <h5 id="day">day</h5>
+              <h5 id="t-date">date</h5>
+            </div>
+            <div class="forecast same-bg-body">
+              <h4 class="text-white-50 text-capitalize city-name">city</h4>
+              
+              <div class="row align-items-center">
+                <div class="col-9">
+                  <h2 id="today-temp">10</h2>
+                </div>
+                <div class="col-3">
+                  <img src="imgs/113.png" alt="" class="float-end t-weather-icon" width="85">
+                </div>
+              </div>
+      
+              <p class="text-capitalize t-weather-status">type</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span><img src="imgs/icon-umberella.png" alt="">&nbsp;<span id="humidity">20</span>%</span>
+                <span><img src="imgs/icon-wind.png" alt="">&nbsp;<span id="wind">18</span>&nbsp;km/h</span>
+                <span><img src="imgs/icon-compass.png" alt="">&nbsp;<span id="direction">East</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="all text-center">
+              <div class="d-flex justify-content-between p-2 bg-head">
+                <h5 class="tomorrow-day">day</h5>
+                <h5 class="tomorrow-date">date</h5>
+              </div>
+              <div class="forecast bg-body-customized same-inner">
+                <img src="imgs/113.png" alt="" class="weather-icon">
+        
+                <div class="data">
+                  <p class="degree mb-0">5.5</p>
+                  <small class="mb-4 small">0.4</small>
+                </div>
+        
+                <p class="text-capitalize mb-1 mt-3 weather-status">type</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="all text-center same-bg">
+            <div class="d-flex justify-content-between p-2 same-bg-head">
+              <h5 class="tomorrow-day">day</h5>
+              <h5 class="tomorrow-date">date</h5>
+            </div>
+            <div class="forecast same-bg-body same-inner">
+              <img src="imgs/113.png" alt="" class="weather-icon">
+      
+              <div class="data">
+                <p class="degree mb-0">5.5</p>
+                <small class="mb-4 small">0.4</small>
+              </div>
+      
+              <p class="text-capitalize text-info mb-1 mt-3 weather-status">type</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+<!-- FOOTER -->
+  <footer>
+    <div class="container">
+        <div class="row gy-3 align-items-center">
+
+          <div class="col-md-9">
+            <form class="d-flex position-relative">
+              <input class="form-control me-2 rounded-5 border-0" type="text" placeholder="Enter your email to subscribe..." id="email-input">
+              <button class="btn btn-primary position-absolute text-white rounded-5" type="submit" id="email-btn">Subscribe</button>
+            </form>
+          </div>
+          
+          <div class="col-md-3 social">
+            <ul class="social--icon d-flex gap-1 list-unstyled">
+              <a href="https://www.facebook.com/" class="text-decoration-none"><li class="border-0 rounded-circle me-3 d-flex justify-content-center align-items-center"><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
+              <a href="https://twitter.com/" class="text-decoration-none"><li class="border-0 rounded-circle me-3 d-flex justify-content-center align-items-center"><i class="bi bi-twitter"></i></li></a>
+              <a href="https://support.google.com/answer/2451065?hl=en" class="text-decoration-none"><li class="border-0 rounded-circle me-3 d-flex justify-content-center align-items-center"><i class="fa fa-google-plus" aria-hidden="true"></i></li></a>
+              <a href="https://www.pinterest.com/" class="text-decoration-none"><li class="border-0 rounded-circle me-3 d-flex justify-content-center align-items-center"><i class="bi bi-pinterest"></i></li></a>
+            </ul>
+          </div>
+      </div>
+
+      <p class="fs-6 text-white-50 text-center mt-4 mb-0">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+    
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/7f2101f265.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

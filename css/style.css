@@ -1,0 +1,118 @@
+/* START OF COMMON STYLE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* END OF COMMON STYLE */
+/* NAVBAR */
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    border-color: #009ad8 !important; 
+    color: #009ad8;
+}
+
+.nav-link{
+    padding: 3px 25px !important;
+    border: 2px solid transparent !important;
+    transition: 0.3s ease;
+    font-weight: 400;
+}
+nav .fa{
+    font-size: larger;
+    line-height: 1.5;
+}
+
+/* .navbar {
+    height: 35vh;
+} */
+
+/* BACKGROUNG IMAGE AND SEARCH */
+.form-search{
+    /* margin-top: calc(5vh + 16px);  */
+    margin-top:30px
+}
+.bg-img{
+    background-image: url(../imgs/banner.png);
+    background-position: 100%;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 90px 0; */
+    min-height: 350px;
+    margin-top: 100px;
+}
+.form-search button, #email-btn{
+    top: 5px;
+    right: 15px;
+    bottom: 5px;
+    padding: 0 40px;
+}
+.form-search input[type="search"] , #email-input{
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+}
+.form-search input[type="search"]::placeholder, #email-input::placeholder{
+    color: white;
+}
+
+/* TABLE */
+
+.same-bg .same-bg-head{
+    background-color: #2d303d;
+}
+.same-bg .same-bg-body{
+    background-color: #323544;
+}
+.bg-head{
+    background-color: #222530;
+}
+.bg-body-customized{
+    background-color:#262936
+}
+.forecast{
+    padding: 30px 20px;
+}
+.forecast .row h2 {
+    font-size: 5rem;
+}
+.same-inner{
+    padding-bottom: 28px;
+}
+.same-inner img{
+    padding: 1px 13px 3px;
+}
+.degree{
+    font-size: 1.7142857143em;
+    font-weight: 700;
+}
+.small{
+    font-size: 1em;
+}
+.data{
+    padding: 9px 17px 21px;
+}
+#date, .forecast > p{
+    color: #1ac5e0 !important;
+    font-size: 1rem;
+}
+
+/* FOOTER */
+footer{
+    background: #262936;
+    padding: 50px 0;
+}
+
+.social--icon  li {
+    width: 40px;
+    height: 40px;
+    background: #1e202b;
+    color: #009ad8;
+    transition: all 0.5s ease-in;
+}
+
+.social--icon  li:hover{
+    background: #009ad8;
+    color: white;
+}
